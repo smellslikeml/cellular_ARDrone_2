@@ -57,3 +57,5 @@ And run the install script
 * Work out monitor issue
 * Set process
 * Create remote Start, Reboot 
+* awscli download to flight instructions from S3 bucket
+* text location, slackbot images?
