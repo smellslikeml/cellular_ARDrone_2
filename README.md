@@ -53,3 +53,7 @@ And run the install script
 * Unplug HDMI after reboot and position drone
 * Monitor flight with Dashboard for kill switch
 
+## TODO
+* Work out monitor issue
+* Set process
+* Create remote Start, Reboot 
