@@ -42,4 +42,14 @@ And run the install script
 ```
 ./install.sh
 ```
+## Configuration
+* Position drone upside down to access pi and disable flight mode
+* Set DEVICEKEY in config.py
+* Set /etc/wpa_supplicant/wpa_supplicant.conf to the drone's SSID
+* Reboot, connect peripherals, note the time (Pi off wifi on drone network)
+* As root (sudo su), set crontab for the time based on start time
+* Unplug keyboard, plug in Hologram Nova
+* From Hologram Dashboard, prepare for 'land' command to break flight
+* Unplug HDMI after reboot and position drone
+* Monitor flight with Dashboard for kill switch
 
