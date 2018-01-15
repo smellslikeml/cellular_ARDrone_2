@@ -2,7 +2,7 @@
 # Cellular Connected Autonomous AR Drone 2.0
 ![pi-in-the-sky](http://mayorquinmachines.ai/images/pi-in-the-sky.jpg)
 
-Put your drone on a longer leash executing programmed flight on a powered Pi zero. Second part of a YOLO object recognition project using Hologram Nova, see [here](https://github.com/mayorquinmachines/PoochPak). Contest entry with additional information [here](https://www.hackster.io/pie_in_the_sky/cellular-connected-autonomous-ar-drone-2-0-0feb3d)
+Put your drone on a longer leash executing programmed flight on a powered Pi zero. Second part of a YOLO object recognition project using Hologram Nova, see [here](https://github.com/mayorquinmachines/PoochPak). Contest entry with additional information [here](https://www.hackster.io/pie_in_the_sky/cellular-connected-autonomous-ar-drone-2-0-0feb3d). More drone hacking [here](http://smellslikeml.com/drone_pwn.html)
 
 ## Hardware
 We used:
