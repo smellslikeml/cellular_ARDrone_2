@@ -20,6 +20,7 @@ Requirements:
 
 ## Wiring it up
 ![pi drone wiring](https://hackster.imgix.net/uploads/attachments/407063/robocopter_bb_ljN1bPDd1J.png?auto=compress%2Cformat&w=740&h=555&fit=max)
+
 The wiring of the pi is very simple for this project. We used a USB to TTL converter to power the raspberry pi through the GPIO pins using the drone's battery. Connecting the power and ground pins to pins 2 and 6 of the pi. Connect the usb end to the usb port at the top of the AR Drone 2.0 next to the battery, where you would normally plug in a usb to store video. Other than that, connect the pi cam using the ribbon cable for pi zero and use a microusb to usb converter to plug in the Hologram Nova.
 
 # Install
