@@ -44,20 +44,43 @@ And run the install script
 ./install.sh
 ./ardrone_setup.py
 ```
-## Configuration
-* Position drone upside down to access pi and disable flight mode
-* Set DEVICEKEY in config.py
-* Set /etc/wpa_supplicant/wpa_supplicant.conf to the drone's SSID
-* Reboot, connect peripherals, note the time (Pi off wifi on drone network)
-* As root (sudo su), set crontab for the time based on start time
-* Unplug keyboard, plug in Hologram Nova
-* From Hologram Dashboard, prepare for 'land' command to break flight
-* Unplug HDMI after reboot and position drone
-* Monitor flight with Dashboard for kill switch
+## Run
+1. Position drone upside down to access pi and disable flight mode like so:
+![ardrone_pi](https://hackster.imgix.net/uploads/attachments/406273/ar_topview_yJfyPeLI4v.jpg?auto=compress%2Cformat&w=740&h=555&fit=max)
 
-## TODO
-* Work out monitor issue
-* Set process
-* Create remote Start, Reboot 
-* awscli download to flight instructions from S3 bucket
-* text location, slackbot images?
+2. Set DEVICEKEY in config.py
+``` python
+DEVICEKEY = 'YOUR-HOLOGRAM-DEVICE-KEY-HERE'
+```
+
+3. Set ```/etc/wpa_supplicant/wpa_supplicant.conf``` to the drone's SSID
+``` bash
+country=US
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+network={
+     ssid="ardrone2_#####"
+}
+```
+4. Reboot, connect peripherals, note the time (Pi off wifi on drone network)
+
+5. As root (sudo su), set crontab for the time based on start time
+``` bash
+$ sudo su
+$ crontab -e
+#In your crontab,
+<minute> <hour> * * * /home/pi/cell_pwn_drone/main.py >> flight.log 2>&1
+```
+6. Unplug keyboard, plug in Hologram Nova
+
+8. From Hologram Dashboard, prepare for 'land' command to break flight
+![hologram nova](https://hackster.imgix.net/uploads/attachments/407331/hologram_dash_9P9uLhbF38.png?auto=compress%2Cformat&w=740&h=555&fit=max)
+
+9. Unplug HDMI after reboot and position drone
+
+10. Monitor flight with [Hologram dashboard](https://dashboard.hologram.io) for kill switch
+
+## Resources
+* [Blog Post](https://www.hackster.io/pi_in_the_sky/cellular-connected-autonomous-ar-drone-2-0-0feb3d)
+* [python-ardrone](https://github.com/fkmclane/python-ardrone)
+* [Hologram Nova python SDK](https://github.com/hologram-io/hologram-python)
