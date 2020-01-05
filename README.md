@@ -1,6 +1,6 @@
 
 # Cellular Connected Autonomous AR Drone 2.0
-![pi-in-the-sky](http://mayorquinmachines.ai/images/pi-in-the-sky.jpg)
+![ardrone_nova](https://hackster.imgix.net/uploads/attachments/406284/20180112_230948_xJJlkJM25e.jpg?auto=compress%2Cformat&w=740&h=555&fit=max)
 
 Put your drone on a longer leash executing programmed flight on a powered Pi zero. Second part of a YOLO object recognition project using Hologram Nova, see [here](https://github.com/mayorquinmachines/PoochPak). Contest entry with additional information [here](https://www.hackster.io/pie_in_the_sky/cellular-connected-autonomous-ar-drone-2-0-0feb3d). More drone hacking [here](http://smellslikeml.com/drone_pwn.html). We modified [this repo](https://github.com/fkmclane/python-ardrone) for ardrone control on our raspberry pi. 
 
@@ -19,8 +19,8 @@ Requirements:
 - [Hologram Data Router Dashboard](https://dashboard.hologram.io/)
 
 ## Wiring it up
+![pi drone wiring](https://hackster.imgix.net/uploads/attachments/407063/robocopter_bb_ljN1bPDd1J.png?auto=compress%2Cformat&w=740&h=555&fit=max)
 The wiring of the pi is very simple for this project. We used a USB to TTL converter to power the raspberry pi through the GPIO pins using the drone's battery. Connecting the power and ground pins to pins 2 and 6 of the pi. Connect the usb end to the usb port at the top of the AR Drone 2.0 next to the battery, where you would normally plug in a usb to store video. Other than that, connect the pi cam using the ribbon cable for pi zero and use a microusb to usb converter to plug in the Hologram Nova.
-![pi drone wiring](http://mayorquinmachines.ai/images/robocopter_bb.png)
 
 # Install
 Compatibility between project dependencies requires python3.4 as default python3. You should burn
